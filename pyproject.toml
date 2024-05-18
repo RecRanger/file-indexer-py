@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "file_indexer"
-version = "0.1.0"
+name = "folder_indexer"
+version = "0.1.1"
 authors = [{ name = "RecRanger", email = "RecRanger+package@proton.me" }]
 description = "A Python script to index a large folder into a parquet file, along with metadata"
 readme = "README.md"
@@ -22,8 +22,8 @@ dependencies = ["loguru", "polars", "python-magic", "tqdm"]
 dev = ["black", "flake8"]
 
 [project.urls]
-Homepage = "https://github.com/RecRanger/file-indexer-py"
-Issues = "https://github.com/RecRanger/file-indexer-py/issues"
+Homepage = "https://github.com/RecRanger/folder-indexer-py"
+Issues = "https://github.com/RecRanger/folder-indexer-py/issues"
 
 [project.scripts]
-file_indexer = "file_indexer.file_indexer:main_cli"
+folder_indexer = "folder_indexer.indexer:main_cli"
